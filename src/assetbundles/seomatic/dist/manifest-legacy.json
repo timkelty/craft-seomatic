@@ -1,0 +1,6 @@
+{
+  "seomatic.css": "/cpresources/seomatic/css/seomatic.bb85ec10c2d9f35aeea5.css",
+  "seomatic.js": "/cpresources/seomatic/js/seomatic-legacy.bb85ec10c2d9f35aeea5.js",
+  "../../../templates/_includes/include-legacy-module.twig": "/cpresources/seomatic/../../../templates/_includes/include-legacy-module.twig",
+  "../../../templates/_includes/include-css-module.twig": "/cpresources/seomatic/../../../templates/_includes/include-css-module.twig"
+}
