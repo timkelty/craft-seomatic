@@ -580,11 +580,11 @@ class Seomatic extends Plugin
             }
         );
         // Handler: \markhuot\CraftQL\Events\AlterQuerySchema::EVENT
-        if (class_exists(\markhuot\CraftQL\CraftQL)) {
+        if (class_exists(\markhuot\CraftQL\CraftQL::class)) {
             Event::on(
                 \markhuot\CraftQL\Types\Query::class,
                 \markhuot\CraftQL\Events\AlterQuerySchema::EVENT,
-                [\markhuot\CraftQL\Events\AlterQuerySchema::class, 'handle']
+                [new \nystudio107\seomatic\craftql\listeners\AlterQuerySchema, 'handle']
             );
         }
     }
