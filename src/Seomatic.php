@@ -579,6 +579,14 @@ class Seomatic extends Plugin
                 );
             }
         );
+        // Handler: \markhuot\CraftQL\Events\AlterQuerySchema::EVENT
+        if (class_exists(\markhuot\CraftQL\CraftQL)) {
+            Event::on(
+                \markhuot\CraftQL\Types\Query::class,
+                \markhuot\CraftQL\Events\AlterQuerySchema::EVENT,
+                [\markhuot\CraftQL\Events\AlterQuerySchema::class, 'handle']
+            );
+        }
     }
 
     /**
