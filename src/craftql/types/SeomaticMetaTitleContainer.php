@@ -4,7 +4,7 @@ namespace nystudio107\seomatic\craftql\types;
 
 use markhuot\CraftQL\Builders\Schema;
 
-class SeomaticMetaContainer extends Schema {
+class SeomaticMetaTitleContainer extends Schema {
 
     protected $interfaces = [
         SeomaticMetaContainerInterface::class,
@@ -12,7 +12,7 @@ class SeomaticMetaContainer extends Schema {
 
     // function boot() {
     // }
-
+    //
     // function getName(): string {
     //     return 'SeomaticMetaContainer';
     // }
